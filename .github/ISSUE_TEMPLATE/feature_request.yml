@@ -1,0 +1,22 @@
+name: 功能建议
+description: 建议新的设备、控制项或工作流
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 需要解决的问题
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: 相关硬件
+      description: 如果涉及设备，请填写品牌和型号。

@@ -1,0 +1,45 @@
+name: Bug 报告
+description: 报告可以稳定复现的问题
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: 请勿在公开 Issue 中提交密码、证书、完整日志或未修复漏洞。
+  - type: input
+    id: version
+    attributes:
+      label: LocalDesk 版本
+      placeholder: 例如 0.2.0-beta.1
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS 与 Mac 型号
+      placeholder: 例如 macOS 15.1，MacBook Pro M3
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: device
+    attributes:
+      label: 相关设备
+      description: 如涉及外设，请提供品牌、型号和连接方式。
